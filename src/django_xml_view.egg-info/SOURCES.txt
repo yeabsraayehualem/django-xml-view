@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/django_xml_view.egg-info/PKG-INFO
+src/django_xml_view.egg-info/SOURCES.txt
+src/django_xml_view.egg-info/dependency_links.txt
+src/django_xml_view.egg-info/requires.txt
+src/django_xml_view.egg-info/top_level.txt

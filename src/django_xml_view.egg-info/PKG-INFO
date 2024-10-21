@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-xml-view
+Version: 0.1.0
+Summary: A Django-based library for rendering XML responses with XSLT support
+Home-page: https://github.com/yourusername/django-xml-view
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.0
+
+pip install django-xml-view
+
+## Usage
+
+1. Add `xml_renderer` to your `INSTALLED_APPS` in `settings.py`:
+
+    ```python
+    INSTALLED_APPS = [
+        # Other apps
+        'xml_renderer',
+    ]
+    ```
+
+2. Use the `render_xml` function in your views:
+
+    ```python
+    from xml_renderer.xmlrenderer import render_xml
+
+    def home(req):
+        xslt_url = static('style.xsl')
+        return render_xml(req, "home.xml", {'xslt': xslt_url})
+    ```
+
+## License
+
+This project is licensed under the MIT License.
